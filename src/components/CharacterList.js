@@ -3,13 +3,13 @@ import React from "react";
 import Character from "./Character";
 
 const CharacterList = props => {
+  console.log("CharacterList props ", props);
   return (
-    <div>CharacterList</div>
-    // <ul>
-    //   {props.characters.map(character => {
-    //     return <Character key={character.name} character={character} />;
-    //   })}
-    // </ul>
+    <ul>
+      {props.characters.map(character => {
+        return <Character key={character.name} character={character} />;
+      })}
+    </ul>
   );
 };
 
